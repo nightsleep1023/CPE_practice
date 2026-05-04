@@ -22,11 +22,13 @@ int main(){
     }
     h=0;
     for(int i=min;i<=max;i++){
-        if(i!=min){
-            printf(" ");
-        }
+        
         if(array[i]!=h){
+            h = array[i];
             printf("%d %d",i,array[i]);
+            if(i!=max){
+                printf(" ");
+            }
         }
     }
 }
